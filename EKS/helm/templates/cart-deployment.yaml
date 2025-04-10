@@ -14,7 +14,7 @@ spec:
       labels:
         service: cart
     spec:
-      {{ if .Values.psp.enabled }}
+      {{ if .Values.psp.enabled }}       # only works if the {{ if .Values.psp.enabled }} is true but in our case it is false, so this block is not in use 
       serviceAccountName: robot-shop
       {{ end }}
       containers:
