@@ -30,7 +30,7 @@ spec:
         - containerPort: 8080
         resources:
           limits:
-            cpu: 200m
+            cpu: 200m    # means 0.2 of single cpu core meaning 20% of single cpu core
             memory: 100Mi
           requests:
             cpu: 100m
